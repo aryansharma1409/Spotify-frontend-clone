@@ -16,5 +16,3 @@ A responsive Spotify-inspired music streaming UI built using **HTML** and **Tail
 This project is created for **educational and portfolio purposes only**.  
 All rights belong to their respective owners.
 
-## Preview
-Open `index.html` in your browser.
