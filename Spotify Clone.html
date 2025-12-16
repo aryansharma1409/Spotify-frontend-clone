@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#121212] text-white">
+
+<div class="flex min-h-screen">
+
+  <aside class="hidden md:flex w-64 bg-black px-5 py-6 flex-col fixed inset-y-0">
+    <div class="flex items-center gap-2 mb-8">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" class="h-8">
+    </div>
+
+    <nav class="space-y-4 text-sm font-semibold">
+      <p class="cursor-pointer text-white">Home</p>
+      <p class="cursor-pointer text-gray-400 hover:text-white">Search</p>
+      <p class="cursor-pointer text-gray-400 hover:text-white">Your Library</p>
+    </nav>
+
+    <div class="mt-6 border-t border-gray-800 pt-6 text-sm space-y-3 text-gray-400">
+      <p class="hover:text-white cursor-pointer">Create Playlist</p>
+      <p class="hover:text-white cursor-pointer">Liked Songs</p>
+    </div>
+
+    <div class="mt-6 flex-1 overflow-y-auto text-sm text-gray-400 space-y-2">
+      <p class="hover:text-white cursor-pointer">Chill Vibes</p>
+      <p class="hover:text-white cursor-pointer">Workout Mix</p>
+      <p class="hover:text-white cursor-pointer">Late Night</p>
+      <p class="hover:text-white cursor-pointer">Road Trip</p>
+    </div>
+  </aside>
+
+  <div class="flex-1 md:ml-64 flex flex-col">
+
+    <header class="sticky top-0 z-20 bg-black px-4 md:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center bg-[#242424] rounded-full px-4 py-2 w-full max-w-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input class="ml-3 bg-transparent w-full outline-none text-sm placeholder-gray-400" placeholder="What do you want to play?">
+      </div>
+
+      <div class="hidden sm:flex items-center gap-4">
+        <button class="text-gray-300 hover:text-white font-semibold">Sign up</button>
+        <button class="bg-white text-black px-5 py-1.5 rounded-full font-semibold">Log in</button>
+      </div>
+    </header>
+
+    <main class="px-4 md:px-6 py-6 overflow-y-auto">
+      <h1 class="text-2xl md:text-3xl font-bold mb-6">Good Evening</h1>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="rounded-md aspect-square object-cover mb-3">
+          <h3 class="text-sm font-semibold">Chill Beats</h3>
+          <p class="text-xs text-gray-400">Lo-fi & calm</p>
+        </div>
+
+        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition">
+          <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" class="rounded-md aspect-square object-cover mb-3">
+          <h3 class="text-sm font-semibold">Workout</h3>
+          <p class="text-xs text-gray-400">Energy boost</p>
+        </div>
+
+        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition">
+          <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a" class="rounded-md aspect-square object-cover mb-3">
+          <h3 class="text-sm font-semibold">Late Night</h3>
+          <p class="text-xs text-gray-400">Smooth & slow</p>
+        </div>
+
+        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition">
+          <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1" class="rounded-md aspect-square object-cover mb-3">
+          <h3 class="text-sm font-semibold">Road Trip</h3>
+          <p class="text-xs text-gray-400">Feel the drive</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+</div>
+
+</body>
+</html>
